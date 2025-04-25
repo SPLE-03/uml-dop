@@ -60,6 +60,16 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_zo1rECG_EfCOWu84Fzec_A" client="_MrLOgCG9EfCOWu84Fzec_A" supplier="_6GZVcCGgEfCOWu84Fzec_A"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_axxfUCHJEfCStq4uDT80nw" name="MInformation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Dkr4MCHKEfCStq4uDT80nw" name="InformationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBTAICHKEfCStq4uDT80nw" name="Id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KPotQCHKEfCStq4uDT80nw" name="title">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_N1FJ8CHKEfCStq4uDT80nw" name="Information"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_VjUA8CHKEfCStq4uDT80nw" client="_Dkr4MCHKEfCStq4uDT80nw" supplier="_N1FJ8CHKEfCStq4uDT80nw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
@@ -78,4 +88,5 @@
   </uml:Model>
   <umlvmprofile:vm xmi:id="_bGgyUCGfEfCOWu84Fzec_A" base_Package="_VsdkcCGfEfCOWu84Fzec_A"/>
   <umlvmprofile:module xmi:id="_h7dQ4CGfEfCOWu84Fzec_A" base_Package="_e9vikCGfEfCOWu84Fzec_A"/>
+  <umlvmprofile:module xmi:id="_fBnj4CHJEfCStq4uDT80nw" base_Package="_axxfUCHJEfCStq4uDT80nw"/>
 </xmi:XMI>
