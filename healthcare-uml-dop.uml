@@ -66,13 +66,26 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KPotQCHKEfCStq4uDT80nw" name="title">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jdQp8CHjEfCStq4uDT80nw" name="description" visibility="public" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_-eHVECHLEfCStq4uDT80nw" name="getId">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_BcpiwCHMEfCStq4uDT80nw" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rJJXkCHjEfCStq4uDT80nw" name="getDescription">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uA8EECHjEfCStq4uDT80nw" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_N1FJ8CHKEfCStq4uDT80nw" name="Information">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_0h0rECHLEfCStq4uDT80nw" name="getId">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_8whK0CHLEfCStq4uDT80nw" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_a5Aw8CHjEfCStq4uDT80nw" name="getDescription">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_iSCM8CHjEfCStq4uDT80nw" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_VjUA8CHKEfCStq4uDT80nw" client="_Dkr4MCHKEfCStq4uDT80nw" supplier="_N1FJ8CHKEfCStq4uDT80nw"/>
