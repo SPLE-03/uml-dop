@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Xs_uQCGeEfCOWu84Fzec_A" name="healthcare-uml-dop">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_XthSsCGeEfCOWu84Fzec_A">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMiGeEfCOWu84Fzec_A" key="Version" value="0.0.4"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMyGeEfCOWu84Fzec_A" key="Comment" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNCGeEfCOWu84Fzec_A" key="Copyright" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNSGeEfCOWu84Fzec_A" key="Date" value="2024-10-21"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNiGeEfCOWu84Fzec_A" key="Author" value=""/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMCGeEfCOWu84Fzec_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
-  </profileApplication>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg">
+  <uml:Model xmi:id="_Xs_uQCGeEfCOWu84Fzec_A" name="healthcare-uml-dop">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_XthSsCGeEfCOWu84Fzec_A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VsdkcCGfEfCOWu84Fzec_A" name="healthcare">
+      <packagedElement xmi:type="uml:Package" xmi:id="_e9vikCGfEfCOWu84Fzec_A" name="MConsultation">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6GZVcCGgEfCOWu84Fzec_A" name="Consultation">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="__h2fQCGlEfCOWu84Fzec_A" name="getId" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_tyGDgCGmEfCOWu84Fzec_A" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return" effect="read"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qu9AoCG8EfCOWu84Fzec_A" name="update">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_xnRjUCG8EfCOWu84Fzec_A" name="subject" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_0yT78CG8EfCOWu84Fzec_A" name="description" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ER4BQCG9EfCOWu84Fzec_A" direction="return" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LkJfkCG-EfCOWu84Fzec_A" name="getStatus">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RaExICG-EfCOWu84Fzec_A" direction="return" effect="read">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_MrLOgCG9EfCOWu84Fzec_A" name="ConsultationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R1cT8CG9EfCOWu84Fzec_A" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXv9ECG9EfCOWu84Fzec_A" name="subject">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZIJskCG9EfCOWu84Fzec_A" name="description">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ta2JsCG9EfCOWu84Fzec_A" name="status">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ye55cCG9EfCOWu84Fzec_A" name="getId">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3-o4kCG9EfCOWu84Fzec_A" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return" effect="read"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UB9ZYCG-EfCOWu84Fzec_A" name="getStatus">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_bJNv8CG-EfCOWu84Fzec_A" direction="return" effect="read">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_cQL_ECG-EfCOWu84Fzec_A" name="update">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_iEDbICG-EfCOWu84Fzec_A" name="subject" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_At-x0CG_EfCOWu84Fzec_A" name="description" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_JBjxkCG_EfCOWu84Fzec_A" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_zo1rECG_EfCOWu84Fzec_A" client="_MrLOgCG9EfCOWu84Fzec_A" supplier="_6GZVcCGgEfCOWu84Fzec_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMiGeEfCOWu84Fzec_A" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMyGeEfCOWu84Fzec_A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNCGeEfCOWu84Fzec_A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNSGeEfCOWu84Fzec_A" key="Date" value="2024-10-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpNiGeEfCOWu84Fzec_A" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMCGeEfCOWu84Fzec_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_bGgyUCGfEfCOWu84Fzec_A" base_Package="_VsdkcCGfEfCOWu84Fzec_A"/>
+  <umlvmprofile:module xmi:id="_h7dQ4CGfEfCOWu84Fzec_A" base_Package="_e9vikCGfEfCOWu84Fzec_A"/>
+</xmi:XMI>
