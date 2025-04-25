@@ -77,6 +77,82 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_VjUA8CHKEfCStq4uDT80nw" client="_Dkr4MCHKEfCStq4uDT80nw" supplier="_N1FJ8CHKEfCStq4uDT80nw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_038dUCHREfCP0dNYSf3N4w" name="MSpecialSerices">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HYUoQCHSEfCP0dNYSf3N4w" name="SpecialServices">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_K80X0CHUEfCP0dNYSf3N4w" name="callService">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_fVSFwCHUEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_n9uiQCHUEfCP0dNYSf3N4w" name="success" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_w64qgCHUEfCP0dNYSf3N4w" name="isAvailable" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_1uhYoCHUEfCP0dNYSf3N4w" name="isAvailable" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_BUhycCHVEfCP0dNYSf3N4w" name="cancelService">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_GHnuACHVEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_JQh_sCHVEfCP0dNYSf3N4w" name="cancelService" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tjqakCHVEfCP0dNYSf3N4w" name="getDetails">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LsOwoCHWEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_PaM3MCHWEfCP0dNYSf3N4w" name="details" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wT4fcCHVEfCP0dNYSf3N4w" name="calculatePrice" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_auYhMCHWEfCP0dNYSf3N4w" name="price" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_KjiAACHSEfCP0dNYSf3N4w" name="SpecialServicesImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nmuM8CHTEfCP0dNYSf3N4w" name="id" visibility="public" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LiS8ECHXEfCP0dNYSf3N4w" name="price">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OyFR0CHXEfCP0dNYSf3N4w" name="distance">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Sly0ACHXEfCP0dNYSf3N4w" name="available">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wh42ICHXEfCP0dNYSf3N4w" name="details" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RKhssCHTEfCP0dNYSf3N4w" client="_KjiAACHSEfCP0dNYSf3N4w" supplier="_HYUoQCHSEfCP0dNYSf3N4w" contract="_HYUoQCHSEfCP0dNYSf3N4w"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3aUhMCHWEfCP0dNYSf3N4w" name="calculatePrice" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aUhMSHWEfCP0dNYSf3N4w" name="price" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3aVvUCHWEfCP0dNYSf3N4w" name="isAvailable" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aVvUSHWEfCP0dNYSf3N4w" name="isAvailable" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3aYLkCHWEfCP0dNYSf3N4w" name="callService">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aYLkSHWEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aYLkiHWEfCP0dNYSf3N4w" name="success" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3aZZsCHWEfCP0dNYSf3N4w" name="getDetails">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aZZsSHWEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aZZsiHWEfCP0dNYSf3N4w" name="details" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_3aaAwCHWEfCP0dNYSf3N4w" name="cancelService">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aaAwSHWEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aaAwiHWEfCP0dNYSf3N4w" name="cancelService" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
@@ -96,4 +172,5 @@
   <umlvmprofile:vm xmi:id="_bGgyUCGfEfCOWu84Fzec_A" base_Package="_VsdkcCGfEfCOWu84Fzec_A"/>
   <umlvmprofile:module xmi:id="_h7dQ4CGfEfCOWu84Fzec_A" base_Package="_e9vikCGfEfCOWu84Fzec_A"/>
   <umlvmprofile:module xmi:id="_fBnj4CHJEfCStq4uDT80nw" base_Package="_axxfUCHJEfCStq4uDT80nw"/>
+  <umlvmprofile:module xmi:id="_EQpFoCHSEfCP0dNYSf3N4w" base_Package="_038dUCHREfCP0dNYSf3N4w"/>
 </xmi:XMI>
