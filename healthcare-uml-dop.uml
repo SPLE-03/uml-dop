@@ -90,7 +90,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_BUhycCHVEfCP0dNYSf3N4w" name="cancelService">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_BUhycCHVEfCP0dNYSf3N4w" name="cancelService" visibility="package">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_GHnuACHVEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_JQh_sCHVEfCP0dNYSf3N4w" name="cancelService" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -153,6 +153,51 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_M3_m4CHbEfCacqaEq2YJJg" name="MComplaintService" visibility="public">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_RokZ8CHbEfCacqaEq2YJJg" name="ComplaintService" visibility="public">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ccGN8CHbEfCacqaEq2YJJg" name="getId" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gWGlYCHbEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mN9JkCHbEfCacqaEq2YJJg" name="submitComplaint" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rrr9kCHbEfCacqaEq2YJJg" name="submitComplaint" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uFoQcCHbEfCacqaEq2YJJg" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wStzECHbEfCacqaEq2YJJg" name="complaintSubject">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_x34aECHbEfCacqaEq2YJJg" name="complaintMessage">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16yO0CHbEfCacqaEq2YJJg" name="ComplaintServiceImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5XDhYCHbEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-Zs74CHbEfCacqaEq2YJJg" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NM1ZACHcEfCacqaEq2YJJg" name="complaintSubject">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PuVFYCHcEfCacqaEq2YJJg" name="complaintMessage">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_W5kkECHcEfCacqaEq2YJJg" client="_16yO0CHbEfCacqaEq2YJJg" supplier="_RokZ8CHbEfCacqaEq2YJJg" contract="_RokZ8CHbEfCacqaEq2YJJg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_SLymUCHcEfCacqaEq2YJJg" name="getId" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_SLzNYCHcEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_uwpG4CHcEfCacqaEq2YJJg" name="submitComplaint" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwpG4SHcEfCacqaEq2YJJg" name="submitComplaint" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwpG4iHcEfCacqaEq2YJJg" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwpG4yHcEfCacqaEq2YJJg" name="complaintSubject">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwpG5CHcEfCacqaEq2YJJg" name="complaintMessage">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
@@ -173,4 +218,5 @@
   <umlvmprofile:module xmi:id="_h7dQ4CGfEfCOWu84Fzec_A" base_Package="_e9vikCGfEfCOWu84Fzec_A"/>
   <umlvmprofile:module xmi:id="_fBnj4CHJEfCStq4uDT80nw" base_Package="_axxfUCHJEfCStq4uDT80nw"/>
   <umlvmprofile:module xmi:id="_EQpFoCHSEfCP0dNYSf3N4w" base_Package="_038dUCHREfCP0dNYSf3N4w"/>
+  <umlvmprofile:module xmi:id="_PMAQ4CHbEfCacqaEq2YJJg" base_Package="_M3_m4CHbEfCacqaEq2YJJg"/>
 </xmi:XMI>
