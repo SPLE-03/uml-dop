@@ -143,6 +143,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DkwJqSHKEfCStq4uDT80nw"/>
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_DkwwsCHKEfCStq4uDT80nw" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_-eOCwCHLEfCStq4uDT80nw" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="healthcare-uml-dop.uml#_-eHVECHLEfCStq4uDT80nw"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_-eOCwSHLEfCStq4uDT80nw"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_DkwwsSHKEfCStq4uDT80nw"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_DkwwsiHKEfCStq4uDT80nw"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_DkwwsyHKEfCStq4uDT80nw"/>
@@ -169,6 +173,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N1KphiHKEfCStq4uDT80nw"/>
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_N1KphyHKEfCStq4uDT80nw" type="Interface_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_0h9N8CHLEfCStq4uDT80nw" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="healthcare-uml-dop.uml#_0h0rECHLEfCStq4uDT80nw"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_0h9N8SHLEfCStq4uDT80nw"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_N1KpiCHKEfCStq4uDT80nw"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_N1KpiSHKEfCStq4uDT80nw"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_N1KpiiHKEfCStq4uDT80nw"/>
