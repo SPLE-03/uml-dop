@@ -103,7 +103,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_BUhycCHVEfCP0dNYSf3N4w" name="cancelService" visibility="package">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_BUhycCHVEfCP0dNYSf3N4w" name="cancelService" visibility="public">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_GHnuACHVEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_JQh_sCHVEfCP0dNYSf3N4w" name="cancelService" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -132,7 +132,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Sly0ACHXEfCP0dNYSf3N4w" name="available">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wh42ICHXEfCP0dNYSf3N4w" name="details" visibility="public" aggregation="composite">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wh42ICHXEfCP0dNYSf3N4w" name="details" visibility="public" aggregation="shared">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eX-yMCbFEfCLasUrN53bvA" name="ServiceName">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RKhssCHTEfCP0dNYSf3N4w" client="_KjiAACHSEfCP0dNYSf3N4w" supplier="_HYUoQCHSEfCP0dNYSf3N4w" contract="_HYUoQCHSEfCP0dNYSf3N4w"/>
