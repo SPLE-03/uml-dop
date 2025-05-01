@@ -211,81 +211,52 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_2Tjz0CHeEfCXy5btsD0Hyw" name="MDrugStore">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_7aX8oCHeEfCXy5btsD0Hyw" name="DrugStore">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_AAEVYCHfEfCXy5btsD0Hyw" name="addToCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAEVYSHfEfCXy5btsD0Hyw" name="addToCart" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAEVYiHfEfCXy5btsD0Hyw" name="drugId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAEVYyHfEfCXy5btsD0Hyw" name="quantity">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_a1rs8CHfEfCXy5btsD0Hyw" name="uploadRecipe" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_a1rs8yHfEfCXy5btsD0Hyw" name="Recipe">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_a1rs9CHfEfCXy5btsD0Hyw" name="uploadRecipe" direction="return">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2Tjz0CHeEfCXy5btsD0Hyw" name="MReport">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_7aX8oCHeEfCXy5btsD0Hyw" name="Report">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_AAEVYCHfEfCXy5btsD0Hyw" name="generate" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAEVYSHfEfCXy5btsD0Hyw" name="generate" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ojwy4CHgEfCXy5btsD0Hyw" name="Checkout" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ojwy4iHgEfCXy5btsD0Hyw" name="Checkout" type="_ge_CUCHgEfCXy5btsD0Hyw" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_wugk8CHgEfCXy5btsD0Hyw" name="viewCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wugk8SHgEfCXy5btsD0Hyw" name="viewCart" type="_n4rMsCHgEfCXy5btsD0Hyw" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_5AXGYCHgEfCXy5btsD0Hyw" name="removeFromCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5AXGYSHgEfCXy5btsD0Hyw" name="removeFromCart" direction="return">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wugk8CHgEfCXy5btsD0Hyw" name="viewReport" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wugk8SHgEfCXy5btsD0Hyw" name="viewReport" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_BeiMkCHhEfCXy5btsD0Hyw" name="drugId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UOEqICadEfClUKKRAzdS9Q" name="getId" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UOEqISadEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           </ownedOperation>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_GBmIECHhEfCXy5btsD0Hyw" name="DrugStoreImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OOMWECHhEfCXy5btsD0Hyw" name="DrugList">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GBmIECHhEfCXy5btsD0Hyw" name="ReportImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cc9XICadEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dU654CadEfClUKKRAzdS9Q" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_h-OnUCadEfClUKKRAzdS9Q" name="reportTitle">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bGTQ8CHhEfCXy5btsD0Hyw" name="cart" type="_n4rMsCHgEfCXy5btsD0Hyw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zQDUcCadEfClUKKRAzdS9Q" name="reportContent">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_EsogECaeEfClUKKRAzdS9Q" name="createdAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_sinW0CHhEfCXy5btsD0Hyw" client="_GBmIECHhEfCXy5btsD0Hyw" supplier="_7aX8oCHeEfCXy5btsD0Hyw" contract="_7aX8oCHeEfCXy5btsD0Hyw"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_fi9CcCHhEfCXy5btsD0Hyw" name="addToCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_fi9CcSHhEfCXy5btsD0Hyw" name="addToCart" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_fi9CciHhEfCXy5btsD0Hyw" name="drugId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_fi9CcyHhEfCXy5btsD0Hyw" name="quantity">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_gBcVQCHhEfCXy5btsD0Hyw" name="uploadRecipe" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gBcVQSHhEfCXy5btsD0Hyw" name="Recipe">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gBcVQCHhEfCXy5btsD0Hyw" name="generate" visibility="public" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_gBcVQiHhEfCXy5btsD0Hyw" name="uploadRecipe" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_gdfYECHhEfCXy5btsD0Hyw" name="Checkout" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gdfYESHhEfCXy5btsD0Hyw" name="Checkout" type="_ge_CUCHgEfCXy5btsD0Hyw" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_g2AlwCHhEfCXy5btsD0Hyw" name="viewCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2AlwSHhEfCXy5btsD0Hyw" name="viewCart" type="_n4rMsCHgEfCXy5btsD0Hyw" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_hi3rwCHhEfCXy5btsD0Hyw" name="removeFromCart" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hi3rwSHhEfCXy5btsD0Hyw" name="removeFromCart" direction="return">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hi3rwCHhEfCXy5btsD0Hyw" name="viewReport" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hi3rwSHhEfCXy5btsD0Hyw" name="viewReport" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hi3rwiHhEfCXy5btsD0Hyw" name="drugId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZpQrACaeEfClUKKRAzdS9Q" name="getId" visibility="public" concurrency="concurrent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZpQrASaeEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           </ownedOperation>
         </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ge_CUCHgEfCXy5btsD0Hyw" name="Order"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_n4rMsCHgEfCXy5btsD0Hyw" name="Cart"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_pdLFUCHgEfCXy5btsD0Hyw" name="Drug"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_qybBACHgEfCXy5btsD0Hyw" name="CartItem"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMiGeEfCOWu84Fzec_A" key="Version" value="0.0.4"/>
