@@ -7,9 +7,6 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_VsdkcCGfEfCOWu84Fzec_A" name="healthcare">
       <packagedElement xmi:type="uml:Package" xmi:id="_e9vikCGfEfCOWu84Fzec_A" name="MConsultation">
         <packagedElement xmi:type="uml:Interface" xmi:id="_6GZVcCGgEfCOWu84Fzec_A" name="Consultation">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="__h2fQCGlEfCOWu84Fzec_A" name="getId" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_tyGDgCGmEfCOWu84Fzec_A" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return" effect="read"/>
-          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_qu9AoCG8EfCOWu84Fzec_A" name="update">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_xnRjUCG8EfCOWu84Fzec_A" name="subject" effect="update">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -21,32 +18,19 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_LkJfkCG-EfCOWu84Fzec_A" name="getStatus">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RaExICG-EfCOWu84Fzec_A" direction="return" effect="read">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_MrLOgCG9EfCOWu84Fzec_A" name="ConsultationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_R1cT8CG9EfCOWu84Fzec_A" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXv9ECG9EfCOWu84Fzec_A" name="subject">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R1cT8CG9EfCOWu84Fzec_A" name="consultationId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXv9ECG9EfCOWu84Fzec_A" name="consultationSubject">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZIJskCG9EfCOWu84Fzec_A" name="description">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZIJskCG9EfCOWu84Fzec_A" name="consultationDescription">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ta2JsCG9EfCOWu84Fzec_A" name="status">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ta2JsCG9EfCOWu84Fzec_A" name="consultationStatus">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ye55cCG9EfCOWu84Fzec_A" name="getId">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3-o4kCG9EfCOWu84Fzec_A" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return" effect="read"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_UB9ZYCG-EfCOWu84Fzec_A" name="getStatus">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_bJNv8CG-EfCOWu84Fzec_A" direction="return" effect="read">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_cQL_ECG-EfCOWu84Fzec_A" name="update">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_cQL_ECG-EfCOWu84Fzec_A" name="consultationUpdate">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_iEDbICG-EfCOWu84Fzec_A" name="subject" effect="update">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
@@ -62,35 +46,18 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_axxfUCHJEfCStq4uDT80nw" name="MInformation">
         <packagedElement xmi:type="uml:Class" xmi:id="_Dkr4MCHKEfCStq4uDT80nw" name="InformationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBTAICHKEfCStq4uDT80nw" name="Id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_KPotQCHKEfCStq4uDT80nw" name="title">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBTAICHKEfCStq4uDT80nw" name="informationId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KPotQCHKEfCStq4uDT80nw" name="informationTitle">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_jdQp8CHjEfCStq4uDT80nw" name="description" visibility="public" isUnique="false">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jdQp8CHjEfCStq4uDT80nw" name="informationDescription" visibility="public" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_-eHVECHLEfCStq4uDT80nw" name="getId">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_BcpiwCHMEfCStq4uDT80nw" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_rJJXkCHjEfCStq4uDT80nw" name="getDescription">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uA8EECHjEfCStq4uDT80nw" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_N1FJ8CHKEfCStq4uDT80nw" name="Information">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_0h0rECHLEfCStq4uDT80nw" name="getId">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8whK0CHLEfCStq4uDT80nw" type="_Q89h4CG_EfCOWu84Fzec_A" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_a5Aw8CHjEfCStq4uDT80nw" name="getDescription">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_iSCM8CHjEfCStq4uDT80nw" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_N1FJ8CHKEfCStq4uDT80nw" name="Information"/>
         <packagedElement xmi:type="uml:Realization" xmi:id="_VjUA8CHKEfCStq4uDT80nw" client="_Dkr4MCHKEfCStq4uDT80nw" supplier="_N1FJ8CHKEfCStq4uDT80nw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_038dUCHREfCP0dNYSf3N4w" name="MSpecialSerices">
+      <packagedElement xmi:type="uml:Package" xmi:id="_038dUCHREfCP0dNYSf3N4w" name="MSpecialServices">
         <packagedElement xmi:type="uml:Interface" xmi:id="_HYUoQCHSEfCP0dNYSf3N4w" name="SpecialServices">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_K80X0CHUEfCP0dNYSf3N4w" name="callService">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_fVSFwCHUEfCP0dNYSf3N4w" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
@@ -122,7 +89,7 @@
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_KjiAACHSEfCP0dNYSf3N4w" name="SpecialServicesImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nmuM8CHTEfCP0dNYSf3N4w" name="id" visibility="public" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nmuM8CHTEfCP0dNYSf3N4w" name="specialServicesId" visibility="public" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_LiS8ECHXEfCP0dNYSf3N4w" name="price">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
@@ -135,9 +102,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Wh42ICHXEfCP0dNYSf3N4w" name="details" visibility="public" aggregation="shared">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_eX-yMCbFEfCLasUrN53bvA" name="ServiceName">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eX-yMCbFEfCLasUrN53bvA" name="specialServicesUser" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RKhssCHTEfCP0dNYSf3N4w" client="_KjiAACHSEfCP0dNYSf3N4w" supplier="_HYUoQCHSEfCP0dNYSf3N4w" contract="_HYUoQCHSEfCP0dNYSf3N4w"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3aUhMCHWEfCP0dNYSf3N4w" name="calculatePrice" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_3aUhMSHWEfCP0dNYSf3N4w" name="price" direction="return">
@@ -171,14 +136,10 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_M3_m4CHbEfCacqaEq2YJJg" name="MComplaintService" visibility="public">
         <packagedElement xmi:type="uml:Interface" xmi:id="_RokZ8CHbEfCacqaEq2YJJg" name="ComplaintService" visibility="public">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ccGN8CHbEfCacqaEq2YJJg" name="getId" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gWGlYCHbEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_mN9JkCHbEfCacqaEq2YJJg" name="submitComplaint" visibility="public" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_rrr9kCHbEfCacqaEq2YJJg" name="submitComplaint" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uFoQcCHbEfCacqaEq2YJJg" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_wStzECHbEfCacqaEq2YJJg" name="complaintSubject">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
@@ -188,8 +149,8 @@
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_16yO0CHbEfCacqaEq2YJJg" name="ComplaintServiceImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_5XDhYCHbEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_-Zs74CHbEfCacqaEq2YJJg" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5XDhYCHbEfCacqaEq2YJJg" name="complaintServiceId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-Zs74CHbEfCacqaEq2YJJg" name="complaintServiceUser" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NM1ZACHcEfCacqaEq2YJJg" name="complaintSubject">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -197,9 +158,6 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_W5kkECHcEfCacqaEq2YJJg" client="_16yO0CHbEfCacqaEq2YJJg" supplier="_RokZ8CHbEfCacqaEq2YJJg" contract="_RokZ8CHbEfCacqaEq2YJJg"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_SLymUCHcEfCacqaEq2YJJg" name="getId" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_SLzNYCHcEfCacqaEq2YJJg" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_uwpG4CHcEfCacqaEq2YJJg" name="submitComplaint" visibility="public" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwpG4SHcEfCacqaEq2YJJg" name="submitComplaint" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -221,18 +179,10 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_wugk8CHgEfCXy5btsD0Hyw" name="viewReport" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wugk8SHgEfCXy5btsD0Hyw" name="viewReport" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_UOEqICadEfClUKKRAzdS9Q" name="getId" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UOEqISadEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_GBmIECHhEfCXy5btsD0Hyw" name="ReportImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cc9XICadEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dU654CadEfClUKKRAzdS9Q" name="userId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cc9XICadEfClUKKRAzdS9Q" name="reportId" type="_Q89h4CG_EfCOWu84Fzec_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dU654CadEfClUKKRAzdS9Q" name="reportUser" type="_Q89h4CG_EfCOWu84Fzec_A"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_h-OnUCadEfClUKKRAzdS9Q" name="reportTitle">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -248,18 +198,20 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_hi3rwCHhEfCXy5btsD0Hyw" name="viewReport" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hi3rwSHhEfCXy5btsD0Hyw" name="viewReport" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZpQrACaeEfClUKKRAzdS9Q" name="getId" visibility="public" concurrency="concurrent">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZpQrASaeEfClUKKRAzdS9Q" name="id" type="_Q89h4CG_EfCOWu84Fzec_A"/>
-          </ownedOperation>
         </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bGPvgCckEfCLasUrN53bvA" name="UserCore">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ottqwCckEfCLasUrN53bvA" name="UserImpl">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9SxqQCckEfCLasUrN53bvA" client="_ottqwCckEfCLasUrN53bvA" supplier="_pl5P8CckEfCLasUrN53bvA" contract="_pl5P8CckEfCLasUrN53bvA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pl5P8CckEfCLasUrN53bvA" name="User"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_U5HpcCclEfCLasUrN53bvA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xe6nACclEfCLasUrN53bvA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cYUl8CclEfCLasUrN53bvA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kWFGsCclEfCLasUrN53bvA"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMiGeEfCOWu84Fzec_A" key="Version" value="0.0.4"/>
@@ -280,4 +232,5 @@
   <umlvmprofile:module xmi:id="_EQpFoCHSEfCP0dNYSf3N4w" base_Package="_038dUCHREfCP0dNYSf3N4w"/>
   <umlvmprofile:module xmi:id="_PMAQ4CHbEfCacqaEq2YJJg" base_Package="_M3_m4CHbEfCacqaEq2YJJg"/>
   <umlvmprofile:module xmi:id="_586gICHeEfCXy5btsD0Hyw" base_Package="_2Tjz0CHeEfCXy5btsD0Hyw"/>
+  <umlvmprofile:module xmi:id="_jy5WkCckEfCLasUrN53bvA" base_Package="_bGPvgCckEfCLasUrN53bvA"/>
 </xmi:XMI>
