@@ -206,12 +206,58 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_pl5P8CckEfCLasUrN53bvA" name="User"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_QLL0ECyeEfC_RLzhPfoznA" name="DChatConsultation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cSQTkCyeEfC_RLzhPfoznA" name="ConsultationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BojboCyfEfC_RLzhPfoznA" name="ListChatMessages">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dOp_giygEfC_RLzhPfoznA" name="consultationimpl" type="_MrLOgCG9EfCOWu84Fzec_A" association="_dOpYcCygEfC_RLzhPfoznA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rtVhgCyeEfC_RLzhPfoznA" name="ChatMessage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wG14YCyeEfC_RLzhPfoznA" name="sender" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1qrUYCyeEfC_RLzhPfoznA" name="content" aggregation="shared">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9PFrkCyfEfC_RLzhPfoznA" name="DArticle">
+        <packagedElement xmi:type="uml:Class" xmi:id="_oB9xECygEfC_RLzhPfoznA" name="InformationImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s7x_sCygEfC_RLzhPfoznA" name="content">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_y3AA8SygEfC_RLzhPfoznA" name="informationimpl" type="_Dkr4MCHKEfCStq4uDT80nw" association="_y2_Z4CygEfC_RLzhPfoznA"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_U5HpcCclEfCLasUrN53bvA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Xe6nACclEfCLasUrN53bvA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_cYUl8CclEfCLasUrN53bvA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_kWFGsCclEfCLasUrN53bvA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uASmICyfEfC_RLzhPfoznA" memberEnd="_uASmIyyfEfC_RLzhPfoznA _uATNMCyfEfC_RLzhPfoznA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uASmISyfEfC_RLzhPfoznA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uASmIiyfEfC_RLzhPfoznA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uASmIyyfEfC_RLzhPfoznA" name="chatmessage" type="_rtVhgCyeEfC_RLzhPfoznA" association="_uASmICyfEfC_RLzhPfoznA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0r9z8CyfEfC_RLzhPfoznA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sFvwCyfEfC_RLzhPfoznA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uATNMCyfEfC_RLzhPfoznA" name="consultationimpl" type="_cSQTkCyeEfC_RLzhPfoznA" association="_uASmICyfEfC_RLzhPfoznA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dOpYcCygEfC_RLzhPfoznA" memberEnd="_dOp_giygEfC_RLzhPfoznA _dOqmkiygEfC_RLzhPfoznA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dOp_gCygEfC_RLzhPfoznA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dOp_gSygEfC_RLzhPfoznA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dOqmkiygEfC_RLzhPfoznA" name="consultationimpl" type="_cSQTkCyeEfC_RLzhPfoznA" association="_dOpYcCygEfC_RLzhPfoznA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_y2_Z4CygEfC_RLzhPfoznA" memberEnd="_y3AA8SygEfC_RLzhPfoznA _y3AA9CygEfC_RLzhPfoznA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y2_Z4SygEfC_RLzhPfoznA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y3AA8CygEfC_RLzhPfoznA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_y3AA9CygEfC_RLzhPfoznA" name="informationimpl" type="_oB9xECygEfC_RLzhPfoznA" association="_y2_Z4CygEfC_RLzhPfoznA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XtSpMiGeEfCOWu84Fzec_A" key="Version" value="0.0.4"/>
@@ -233,4 +279,12 @@
   <umlvmprofile:module xmi:id="_PMAQ4CHbEfCacqaEq2YJJg" base_Package="_M3_m4CHbEfCacqaEq2YJJg"/>
   <umlvmprofile:module xmi:id="_586gICHeEfCXy5btsD0Hyw" base_Package="_2Tjz0CHeEfCXy5btsD0Hyw"/>
   <umlvmprofile:module xmi:id="_jy5WkCckEfCLasUrN53bvA" base_Package="_bGPvgCckEfCLasUrN53bvA"/>
+  <umlvmprofile:delta xmi:id="_WRWhECyeEfC_RLzhPfoznA" base_Package="_QLL0ECyeEfC_RLzhPfoznA"/>
+  <umlvmprofile:modifiedClass xmi:id="_dinIMCyeEfC_RLzhPfoznA" base_Class="_cSQTkCyeEfC_RLzhPfoznA"/>
+  <umlvmprofile:adds xmi:id="_bhRQoCygEfC_RLzhPfoznA" base_Property="_BojboCyfEfC_RLzhPfoznA"/>
+  <umlvmprofile:modifies xmi:id="_gGnEECygEfC_RLzhPfoznA" base_Association="_dOpYcCygEfC_RLzhPfoznA"/>
+  <umlvmprofile:delta xmi:id="_jTaXQCygEfC_RLzhPfoznA" base_Package="_9PFrkCyfEfC_RLzhPfoznA"/>
+  <umlvmprofile:adds xmi:id="_usVXUCygEfC_RLzhPfoznA" base_Property="_s7x_sCygEfC_RLzhPfoznA"/>
+  <umlvmprofile:modifies xmi:id="_1kGgYCygEfC_RLzhPfoznA" base_Association="_y2_Z4CygEfC_RLzhPfoznA"/>
+  <umlvmprofile:modifiedClass xmi:id="_SNWYwCyhEfC_RLzhPfoznA" base_Class="_oB9xECygEfC_RLzhPfoznA"/>
 </xmi:XMI>
