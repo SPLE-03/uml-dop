@@ -230,6 +230,22 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_y3AA8SygEfC_RLzhPfoznA" name="informationimpl" type="_Dkr4MCHKEfCStq4uDT80nw" association="_y2_Z4CygEfC_RLzhPfoznA"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HVjzADGHEfCTtJ6Hq2TUiw" name="DPatient">
+        <packagedElement xmi:type="uml:Class" xmi:id="_W1IC4DGIEfCTtJ6Hq2TUiw" name="ReportImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_geDE8DGIEfCTtJ6Hq2TUiw" name="diagnosis">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oSu3UjGKEfCTtJ6Hq2TUiw" name="reportimpl" type="_GBmIECHhEfCXy5btsD0Hyw" association="_oSuQQDGKEfCTtJ6Hq2TUiw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KVO-QDGJEfCTtJ6Hq2TUiw" name="DDoctor">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iBSj4DGJEfCTtJ6Hq2TUiw" name="ReportImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n6hBEDGJEfCTtJ6Hq2TUiw" name="patientTreated">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UyntsDGKEfCTtJ6Hq2TUiw" name="reportimpl" type="_GBmIECHhEfCXy5btsD0Hyw" association="_UyhnEDGKEfCTtJ6Hq2TUiw"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q89h4CG_EfCOWu84Fzec_A" name="UUID"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_U5HpcCclEfCLasUrN53bvA"/>
@@ -257,6 +273,18 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y3AA8CygEfC_RLzhPfoznA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_y3AA9CygEfC_RLzhPfoznA" name="informationimpl" type="_oB9xECygEfC_RLzhPfoznA" association="_y2_Z4CygEfC_RLzhPfoznA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UyhnEDGKEfCTtJ6Hq2TUiw" visibility="public" memberEnd="_UyntsDGKEfCTtJ6Hq2TUiw _UyoUwjGKEfCTtJ6Hq2TUiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Uyi1MDGKEfCTtJ6Hq2TUiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Uyi1MTGKEfCTtJ6Hq2TUiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UyoUwjGKEfCTtJ6Hq2TUiw" name="reportimpl" type="_iBSj4DGJEfCTtJ6Hq2TUiw" association="_UyhnEDGKEfCTtJ6Hq2TUiw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oSuQQDGKEfCTtJ6Hq2TUiw" memberEnd="_oSu3UjGKEfCTtJ6Hq2TUiw _oSu3VTGKEfCTtJ6Hq2TUiw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oSu3UDGKEfCTtJ6Hq2TUiw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oSu3UTGKEfCTtJ6Hq2TUiw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oSu3VTGKEfCTtJ6Hq2TUiw" name="reportimpl" type="_W1IC4DGIEfCTtJ6Hq2TUiw" association="_oSuQQDGKEfCTtJ6Hq2TUiw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XtSCICGeEfCOWu84Fzec_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtSpMSGeEfCOWu84Fzec_A" source="PapyrusVersion">
@@ -287,4 +315,11 @@
   <umlvmprofile:adds xmi:id="_usVXUCygEfC_RLzhPfoznA" base_Property="_s7x_sCygEfC_RLzhPfoznA"/>
   <umlvmprofile:modifies xmi:id="_1kGgYCygEfC_RLzhPfoznA" base_Association="_y2_Z4CygEfC_RLzhPfoznA"/>
   <umlvmprofile:modifiedClass xmi:id="_SNWYwCyhEfC_RLzhPfoznA" base_Class="_oB9xECygEfC_RLzhPfoznA"/>
+  <umlvmprofile:delta xmi:id="_jk59oDGHEfCTtJ6Hq2TUiw" base_Package="_HVjzADGHEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:modifiedClass xmi:id="_bTpcoDGIEfCTtJ6Hq2TUiw" base_Class="_W1IC4DGIEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:adds xmi:id="_iLfeMDGIEfCTtJ6Hq2TUiw" base_Property="_geDE8DGIEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:delta xmi:id="_QC3PcDGJEfCTtJ6Hq2TUiw" base_Package="_KVO-QDGJEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:modifiedClass xmi:id="_kg9rUDGJEfCTtJ6Hq2TUiw" base_Class="_iBSj4DGJEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:modifies xmi:id="_nT-JADGKEfCTtJ6Hq2TUiw" base_Association="_UyhnEDGKEfCTtJ6Hq2TUiw"/>
+  <umlvmprofile:modifies xmi:id="_posksDGKEfCTtJ6Hq2TUiw" base_Association="_oSuQQDGKEfCTtJ6Hq2TUiw"/>
 </xmi:XMI>
